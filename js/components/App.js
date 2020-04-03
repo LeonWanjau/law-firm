@@ -95,13 +95,26 @@ const useStyles = makeStyles(theme => ({
             opacity: 0,
         },
 
-        '56%': {
-            transform: 'translateZ(-160px) rotateY(87deg)',
+        '20%':{
+            transform:'translateZ(-640px) rotateY(0deg)'
+        },
+
+        '40%': {
+            transform: 'translateZ(-480px) rotateY(-90deg)',
+            
+        },
+
+        '60%':{
+            transform:'translateZ(-320px) rotateY(-180deg)',
             opacity: 1
         },
 
+        '80%':{
+            transform:'translateZ(-160px) rotateY(-270deg)'
+        },
+
         '100%': {
-            transform: 'translateZ(0) rotateY(0)',
+            transform: 'translateZ(0) rotateY(-360deg)',
         }
     },
 
