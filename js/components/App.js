@@ -145,6 +145,7 @@ const useStyles = makeStyles(theme => ({
         fontFamily: 'Merriweather',
         fontWeight: 'bold',
         fontSize: '1.5rem',
+        flex:'0',
         textTransform: 'uppercase',
         animation: '$changeTextColor 3s linear infinite,$headingSlideLeft 1s ease-in',
         animationFillMode: 'both,both',
@@ -161,9 +162,10 @@ const useStyles = makeStyles(theme => ({
     headingContainer:{
         display:'flex',
         width:'100%',
+        justifyContent:'center',
 
         '& > $pageHeading + $pageHeading':{
-            marginLeft:'0.5rem'
+            marginLeft:'1rem'
         },
     },
 
@@ -177,6 +179,12 @@ const useStyles = makeStyles(theme => ({
     '@media (min-width: 35em)': {
         pageHeading: {
             fontSize: '2.25rem',
+        },
+
+        headingContainer:{
+            '& > $pageHeading + $pageHeading':{
+                marginLeft:'0.8rem'
+            },
         }
     }
 }))
